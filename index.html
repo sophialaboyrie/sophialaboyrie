@@ -6,6 +6,10 @@
   <title>Sophia Laboyrie · UX &amp; AI-focused designer</title>
   <meta name="description" content="Portfolio of Sophia Laboyrie, an MSc student in London designing thoughtful, human-centred experiences, with a focus on AI.">
   <meta name="color-scheme" content="light dark">
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -19,6 +23,7 @@
         <a href="#work">Work</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">☾</button>
       </nav>
     </div>
   </header>
@@ -26,26 +31,25 @@
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="wrap">
-        <p class="eyebrow">// UX designer · London</p>
-        <h1 id="hero-title">Hi, I'm Sophia. I design <span class="grad-text">human-centred</span> experiences for an AI-shaped world.</h1>
-        <p class="lede">I'm an MSc student in London, looking for UX and AI-focused design roles. I care about making complex technology feel clear, trustworthy and kind to use.</p>
-        <ul class="chips" aria-label="Focus areas">
+        <p class="eyebrow reveal" style="transition-delay:0s">UX designer · London</p>
+        <h1 id="hero-title" class="hero-title reveal" style="transition-delay:0.08s">I design human-centred experiences for an AI-shaped world.</h1>
+        <p class="lede reveal" style="transition-delay:0.16s">I'm an MSc student in London, looking for UX and AI-focused design roles. I care about making complex technology feel clear, trustworthy and kind to use.</p>
+        <ul class="chips reveal" aria-label="Focus areas" style="transition-delay:0.24s">
           <li class="chip">UX research</li>
           <li class="chip">Interaction design</li>
           <li class="chip">AI &amp; trust</li>
         </ul>
-        <div class="btn-row">
-          <a class="btn btn--solid" href="#work">See selected work</a>
-          <a class="btn" href="#contact">Get in touch</a>
+        <div class="btn-row reveal" style="transition-delay:0.32s">
+          <a class="btn btn--solid" href="#work">See My Work</a>
+          <a class="btn" href="#about">About Me</a>
         </div>
       </div>
     </section>
 
     <section id="work" aria-labelledby="work-title">
       <div class="wrap">
-        <p class="eyebrow">// 01 selected work</p>
-        <h2 id="work-title">Case studies</h2>
-        <p class="lede">A few projects that show how I research, think and design.</p>
+        <h2 id="work-title" class="reveal">My work</h2>
+        <p class="lede reveal">A few projects that show how I research, think and design.</p>
         <ul class="cards" id="case-list">
           <li class="card card--lilac"><h3>Loading case studies…</h3><p>If this message stays, JavaScript may be switched off in your browser.</p></li>
         </ul>
@@ -55,10 +59,10 @@
     <section id="about" aria-labelledby="about-title">
       <div class="wrap about-grid">
         <div class="reveal">
-          <p class="eyebrow">// 02 about</p>
-          <h2 id="about-title">A bit about me</h2>
-          <p>I'm Sophia, an MSc student based in London. <em>(Replace this paragraph with your story: what drew you to UX, what you're studying, and what you want to do next.)</em></p>
-          <p>I'm especially interested in how people understand, trust and collaborate with AI, and in designing interfaces that make that feel natural.</p>
+          <h2 id="about-title">About me</h2>
+          <p>My background is in sociology, which gave me a natural curiosity about people and how they interact. For the last three years I've worked in CRM, mostly in the fashion industry, where I learned to pay close attention to what makes people respond, return and feel looked after.</p>
+          <p>A love of fashion and the arts means I care deeply about aesthetics and how things look and feel. UX is where all of this comes together, and it's become my real passion: understanding people, designing with care, and making the experience beautiful as well as useful.</p>
+          <p>I'm now an MSc student in London, especially interested in how people understand, trust and collaborate with AI, and in designing interfaces that make that feel natural.</p>
         </div>
         <div class="panel reveal">
           <h3>Skills &amp; tools</h3>
@@ -75,12 +79,11 @@
 
     <section id="contact" aria-labelledby="contact-title">
       <div class="wrap reveal">
-        <p class="eyebrow">// 03 contact</p>
-        <h2 id="contact-title">Let's talk</h2>
+        <h2 id="contact-title">Connect</h2>
         <p class="lede">I'm open to UX and AI-focused design roles. Say hello.</p>
         <ul class="contact-links">
           <li><a class="big-link" href="mailto:laboyriesophia@gmail.com">laboyriesophia@gmail.com</a></li>
-          <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+          <li><a href="https://www.linkedin.com/in/sophia-laboyrie-0b6005216/">LinkedIn</a></li>
         </ul>
       </div>
     </section>
@@ -90,7 +93,8 @@
     <div class="wrap">© <span id="year">2026</span> Sophia Laboyrie · Designed and built with AI, see <a href="case-study.html?slug=building-this-portfolio">how</a>.</div>
   </footer>
 
-  <script src="js/case-studies.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/theme.js?v=2"></script>
+  <script src="js/case-studies.js?v=3"></script>
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>

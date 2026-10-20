@@ -11,10 +11,10 @@
   }
 
   if (list) {
-    list.innerHTML = studies.map(function (s) {
+    list.innerHTML = studies.map(function (s, i) {
       return (
-        '<li class="card card--' + esc(s.color || "lilac") + ' reveal">' +
-        '<span class="meta">' + esc(s.year) + " · " + esc(s.role) + "</span>" +
+        '<li class="card card--' + esc(s.color || "peach") + ' reveal" style="transition-delay:' + (i * 0.08) + 's">' +
+        '<span class="meta">' + esc([s.type, s.timeline].filter(Boolean).join(" · ")) + "</span>" +
         '<h3><a href="case-study.html?slug=' + encodeURIComponent(s.slug) + '">' + esc(s.title) + "</a></h3>" +
         "<p>" + esc(s.summary) + "</p>" +
         '<ul class="tags">' + (s.tags || []).map(function (t) { return '<li class="tag">' + esc(t) + "</li>"; }).join("") + "</ul>" +
