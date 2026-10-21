@@ -27,6 +27,13 @@
   var year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 
+  // Tap-to-reveal the photo contact overlay on touch devices
+  document.querySelectorAll(".photo-card").forEach(function (card) {
+    card.addEventListener("click", function (e) {
+      if (e.target.tagName !== "A") card.classList.toggle("show");
+    });
+  });
+
   var items = document.querySelectorAll(".reveal");
   if (!("IntersectionObserver" in window)) {
     items.forEach(function (el) { el.classList.add("in"); });
