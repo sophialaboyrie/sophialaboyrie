@@ -34,42 +34,35 @@ window.CASE_STUDIES = [
     slug: "building-this-portfolio",
     title: "This portfolio is the case study",
     summary:
-      "How I designed and built this site with AI: the decisions I owned, the parts I delegated, and what I'd do differently.",
-    tags: ["AI-assisted design", "Process", "Front-end"],
+      "I designed and built this site in collaboration with AI, setting the direction and steering it through several redesigns while keeping the decisions my own. I wanted a portfolio that shows how I think and that I can keep editing myself, so the site itself became the case study.",
+    tags: ["AI assisted design", "Design direction", "Front end"],
     color: "peach",
-    type: "Design & build",
+    type: "AI assisted design & build",
     context: "Personal project",
-    format: "Live website",
+    format: "Live site · HTML, CSS & JS",
     timeline: "2026",
     sections: [
       {
-        label: "The brief",
-        heading: "A portfolio I could keep editing myself",
+        label: "The approach",
+        heading: "Design by conversation",
         body: [
-          "I wanted a site that shows how I think, not only what I've made, and that I could update myself without a CMS or a build step.",
-          "<em>Draft note: replace this with your own words.</em>"
+          "Instead of opening Figma, I started by describing the feeling I wanted, and the AI proposed three distinct directions rather than one. Choosing between real, rendered options made the decisions concrete, much closer to how I actually judge design. From there I kept steering: the type moved from a playful sans to a refined serif, the palette from pastel to crimson, and when I found a minimal editorial portfolio I loved, I pivoted the whole look in minutes by comparing full versions live. I owned the direction, content and taste, while AI handled the first drafts of the code, accessible markup and responsive layout. The skill wasn't writing code, it was knowing what I wanted and recognising when something wasn't right."
         ]
       },
       {
-        label: "Working with AI",
-        heading: "Describe the feel, then steer",
+        label: "The outcome",
+        heading: "A living, editable portfolio",
         body: [
-          "I started by describing the mood I wanted. The AI asked me about colour, type and motion, then proposed three clearly different directions to choose from.",
-          "I picked the warmest one, then reviewed and refined the result until it felt like me."
+          "The result is a fast, accessible, responsive site with light and dark modes, plus case studies I can add or edit myself in a single file. More than the artifact, it shows how I work with AI: as a design tool I direct, rather than a voice I defer to."
         ]
       },
       {
-        label: "Decisions vs. delegation",
-        heading: "What I owned, what I handed over",
-        body: [
-          "<strong>I decided:</strong> the direction, the content, what to show and what to cut.",
-          "<strong>AI helped with:</strong> structure, accessible markup, responsive layout and first-draft code."
-        ]
-      },
-      {
-        label: "Reflection",
+        label: "The reflection",
         heading: "What I'd take from this",
-        body: ["Add your reflections here: what worked, what you had to correct, and what you learned."]
+        body: [
+          "Seeing options rendered live and early changed how fast and how confidently I could decide, and I'd bring that 'show me three' habit to any project.",
+          "<em>Make this yours: add what surprised you, what you'd do differently, and what this taught you about designing with AI.</em>"
+        ]
       }
     ]
   },
@@ -88,22 +81,6 @@ window.CASE_STUDIES = [
       { label: "The problem", heading: "What wasn't working", body: ["What problem were you solving? What did you learn about users?"] },
       { label: "The approach", heading: "How I tackled it", body: ["Research, ideation, testing. Show the key decisions you made and why."] },
       { label: "Outcome", heading: "What changed", body: ["What was the result? What did you learn?"] }
-    ]
-  },
-  {
-    slug: "example-project-two",
-    title: "Example case study: AI-focused project",
-    summary:
-      "Placeholder for a project about designing with or for AI, such as interaction design, trust, or explainability.",
-    tags: ["AI", "Interaction design"],
-    color: "mint",
-    type: "Interaction design · AI",
-    context: "MSc project",
-    format: "Concept",
-    timeline: "6 weeks · 2026",
-    sections: [
-      { label: "The challenge", heading: "What made this interesting", body: ["Describe the project, your role, and what made it hard or novel."] },
-      { label: "The solution", heading: "What I designed", body: ["What did you design, and why does it work?"] }
     ]
   }
 ];

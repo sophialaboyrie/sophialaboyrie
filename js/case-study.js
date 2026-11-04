@@ -40,7 +40,7 @@
   // Numbered sections, Karissa-style: eyebrow "01 — Label", bold headline, body.
   var sections = (s.sections || []).map(function (sec, i) {
     var n = ("0" + (i + 1)).slice(-2);
-    var eyebrow = '<p class="cs-sec-num">' + n + (sec.label ? " — " + esc(sec.label) : "") + "</p>";
+    var eyebrow = '<p class="cs-sec-num">' + n + (sec.label ? " / " + esc(sec.label) : "") + "</p>";
     var head = sec.heading ? "<h2>" + esc(sec.heading) + "</h2>" : "";
     var paras = [].concat(sec.body || []).map(function (p) { return "<p>" + p + "</p>"; }).join("");
     return '<section class="cs-sec">' + eyebrow + head + paras + "</section>";
