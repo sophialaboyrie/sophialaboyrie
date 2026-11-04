@@ -105,10 +105,10 @@ a:hover { text-decoration-thickness: 2px; }
 section { padding: clamp(3.5rem, 9vw, 6.5rem) 0; }
 main > section + section { border-top: 1px solid var(--rule); }
 .eyebrow { font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent); letter-spacing: 0.04em; margin: 0 0 0.75rem; }
-h1, h2, h3 { font-family: var(--font-head); line-height: 1.1; margin: 0 0 1rem; letter-spacing: -0.02em; color: var(--accent); }
-h1 { font-size: clamp(2rem, 5.5vw, 3.6rem); }
-h2 { font-size: clamp(1.6rem, 4vw, 2.35rem); }
-h3 { font-size: 1.4rem; }
+h1, h2, h3 { font-family: var(--font-head); font-weight: 500; line-height: 1.12; margin: 0 0 1rem; letter-spacing: -0.01em; color: var(--accent); }
+h1 { font-size: clamp(1.9rem, 4.6vw, 3rem); }
+h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); }
+h3 { font-size: 1.2rem; }
 .lede { font-size: clamp(1.15rem, 2.6vw, 1.45rem); color: var(--ink-soft); max-width: 40rem; }
 .grad-text { color: var(--accent); }
 
@@ -219,7 +219,7 @@ footer { padding: 2rem 0 3rem; font-family: var(--font-mono); font-size: 0.85rem
   font-family: var(--font-body); font-size: 0.8rem; font-weight: 600;
   letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin: 0 0 0.6rem;
 }
-.cs-sec h2 { font-size: clamp(1.6rem, 4.2vw, 2.5rem); max-width: 20ch; margin-bottom: 1.1rem; }
+.cs-sec h2 { font-size: clamp(1.5rem, 3.4vw, 2.05rem); max-width: 20ch; margin-bottom: 1.1rem; }
 .cs-sec p { margin: 0 0 1rem; }
 .cs-sec p:last-child { margin-bottom: 0; }
 .cs-hero-img { border-radius: var(--radius); margin: 1rem 0 2rem; border: 1px solid var(--line); }
